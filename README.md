@@ -18,8 +18,6 @@ It will display jQuery data property of a selected element.
 
 ### Manual Installation
 
-**Make sure you are using Node 6+ and NPM 3+**
-
 1. Clone this repo
 2. Open Chrome extension page
 3. Check "developer mode"
