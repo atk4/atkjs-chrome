@@ -7,15 +7,14 @@ Help debuging javascript when using Agile Toolkit framework.
 The ATK develppper panel will properly formatted json response into readable code in order
 to help debugging javascript action return by server.
 
-<p align="center"><img width="720px" src="https://raw.githubusercontent.com/atk4/atk-chrome/master/media/atk-panel.png" alt="screenshot"></p>
+![atk-panel](media/atk-panel.png)
 
 ### Plugin property content
 
 This is a sidebar panel available when using the Element panel in Chrome. 
 It will display jQuery data property of a selected element.
 
-<p align="center"><img width="720px" src="https://raw.githubusercontent.com/atk4/atk-chrome/master/media/atk-plugin-properties.png" alt="screenshot"></p>
-
+![atk-sidebar](media/atk-plugin-properties.png)
 
 ### Manual Installation
 
