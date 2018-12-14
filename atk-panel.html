@@ -1,0 +1,82 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="vendor/fomantic-2.6.4/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/highlight.js/default.min.css">
+    <link rel="stylesheet" type="text/css" href="atk-extension.css">
+</head>
+<body>
+<div class="ui container atk-extension">
+    <h4 class="ui header atk-extension">Atk Developper Extension</h4>
+    <div class="ui basic segment atk-extension">
+        <div class="atk-extension indent">
+            <span class="atk-extension label">Atkjs-ui version:</span>
+            <span class="atk-extension info ui primary label" id="atk-version"></span>
+        </div>
+    </div>
+    <h4 class="ui header atk-extension">Callback Request</h4>
+    <div class="ui basic segment atk-extension">
+        <div class="atk-extension indent">
+            <span class="atk-extension label">Base Url:</span>
+            <span class="atk-extension info response" id="atk-request-url"></span>
+        </div>
+        <div class="ui two column stackable grid container atk-extension">
+            <div class="column">
+                <table id="atk-header-query" class="ui very basic table unstackable atk-extension">
+                    <caption>Query string</caption>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div class="column">
+                <table id="atk-header-data" class="ui very basic table unstackable atk-extension">
+                    <caption>Post data</caption>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <h4 class="ui header atk-extension">Callback Response</h4>
+    <div class="atk-extension indent">
+        <span class="atk-extension label">Status:</span>
+        <span class="atk-extension info" id="atk-response-status"></span>
+    </div>
+    <div class="atk-extension indent spaced">
+        <span class="atk-extension label">Element Id:</span>
+        <span class="atk-extension info response" id="atk-response-id"></span>
+    </div>
+    <div class="ui basic segment atk-extension">
+        <div class="ui top attached tabular menu atk-extension">
+            <a class="item active" data-tab="atkjs">Javascript</a>
+            <a class="item" data-tab="rawhtml">Raw HTML</a>
+            <a class="item" data-tab="html">Rendered HTML</a>
+        </div>
+        <div class="ui attached tab active" data-tab="atkjs">
+            <div class="atk-extension code-container">
+                <figure>
+                <pre>
+                    <code spellcheck="false" id="atk-atkjs" class="javascript"></code>
+                 </pre>
+                </figure>
+            </div>
+        </div>
+        <div class="ui attached tab" data-tab="rawhtml">
+            <div class="atk-extension code-container">
+                <figure>
+                    <pre>
+                        <code spellcheck="false" id="atk-rawhtml" class="html"></code>
+                  </pre>
+                </figure>
+            </div>
+        </div>
+        <div class="ui attached tab" data-tab="html">
+            <div id="atk-html"></div>
+        </div>
+    </div>
+</div>
+<script src="vendor/jquery-3.3.1.min.js"></script>
+<script src="vendor/fomantic-2.6.4/semantic.min.js"></script>
+<script src="vendor/highlight.js/highlight.min.js"></script>
+<script src="atk-panel.js"></script>
+</body>
+</html>

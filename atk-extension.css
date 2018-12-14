@@ -1,0 +1,66 @@
+:not(pre) > code[class*="language-"], pre[class*="language-"] {
+    background-color: #eaeaea;
+}
+
+.ui.container.atk-extension {
+    margin-left: 8px !important;
+    width: 98%;
+}
+
+.ui.table.atk-extension {
+    font-size: small;
+}
+
+.ui.table.atk-extension thead th, .ui.table.atk-extension tbody td {
+    padding: 4px 2px;
+}
+
+.ui.table.atk-extension caption {
+    text-align: left;
+    padding: 2px 4px;
+    border-bottom: 1px solid rgba(34,36,38,.1);
+}
+
+.ui.segment.atk-extension {
+    padding: 0px;
+    margin: 0px;
+}
+
+.ui.header.atk-extension:first-child {
+    margin-top: 0.93em;
+}
+
+.ui.header.atk-extension {
+    background-color: rgba(34,36,38,.1);
+    padding: 4px 8px;
+}
+
+.atk-extension.indent {
+    margin-left: 8px;
+}
+
+.ui.label.atk-extension.info {
+    padding: 2px;
+}
+
+.ui.column.atk-extension {
+    margin-top: 12px;
+}
+
+.atk-extension.label, .atk-extension > caption {
+    color: #536373;
+}
+
+.atk-extension.info {
+    color: #c80000;
+}
+
+.atk-extension.indent.spaced {
+    margin-bottom: 18px;
+}
+
+code {
+    outline: none;
+}
+
+
