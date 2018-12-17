@@ -1,6 +1,6 @@
 {
   "name": "Agile Toolkit UI Developper Extension",
-  "version": "0.1",
+  "version": "1.0.1",
   "description": "Extends the Developer Tools for Agile Toolkit UI.",
   "devtools_page": "atktools.html",
   "manifest_version": 2,
