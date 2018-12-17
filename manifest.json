@@ -1,6 +1,6 @@
 {
   "name": "Agile Toolkit UI Developper Extension",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Extends the Developer Tools for Agile Toolkit UI.",
   "devtools_page": "atktools.html",
   "manifest_version": 2,
@@ -14,9 +14,14 @@
     "persistent": false
   },
   "browser_action": {
-    "default_title": "allo",
+    "default_title": "Agile Toolkit Extension",
     "default_popup": "atk-popup.html",
-    "default_icon": "logo.png"
+    "default_icon": "icon/icon.png"
+  },
+  "icons": {
+    "16" : "icon/icon16.png",
+    "48" : "icon/icon48.png",
+    "128": "icon/icon128.png"
   },
   "content_scripts": [
     {
