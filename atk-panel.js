@@ -137,13 +137,13 @@ function setupPanel(jQuery) {
 }
 
 /**
- * Function provide by David Kacha.
- * https://codepen.io/davidkacha/pen/zzNBxq
+ * Pretty print html.
+ *
  * @param html
  * @returns {String}
  */
 function formatFactory(html) {
-  function parse(html, tab = 0) {
+  function parse(html, tab = 2) {
     var tab;
     var html = jQuery.parseHTML(html);
     var formatHtml = new String();
@@ -152,29 +152,32 @@ function formatFactory(html) {
       var tabs = new String();
 
       for (i=0; i < tab; i++){
-        tabs += '\t';
+        tabs += ' ';
       }
       return tabs;
     };
 
+    function trimIt(toTrim) {
+      return toTrim ? toTrim.trim() : '';
+    }
 
     jQuery.each( html, function( i, el ) {
       if (el.nodeName == '#text') {
-        if ((jQuery(el).text().trim()).length) {
-          formatHtml += setTabs() + jQuery(el).text().trim() + '\n';
+        if (trimIt(jQuery(el).text())) {
+          formatHtml += setTabs() + trimIt(jQuery(el).text()) + '\n';
         }
       } else {
-        var innerHTML = jQuery(el).html().trim();
+        var innerHTML = trimIt(jQuery(el).html());
         jQuery(el).html(innerHTML.replace('\n', '').replace(/ +(?= )/g, ''));
 
 
         if (jQuery(el).children().length) {
           jQuery(el).html('\n' + parse(innerHTML, (tab + 1)) + setTabs());
-          var outerHTML = jQuery(el).prop('outerHTML').trim();
+          var outerHTML = trimIt(jQuery(el).prop('outerHTML'));
           formatHtml += setTabs() + outerHTML + '\n';
 
         } else {
-          var outerHTML = jQuery(el).prop('outerHTML').trim();
+          var outerHTML = trimIt(jQuery(el).prop('outerHTML'));
           formatHtml += setTabs() + outerHTML + '\n';
         }
       }
